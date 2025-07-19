@@ -2,7 +2,6 @@
 
 Minishell is a 42 School project aimed at creating a minimalist shell in C, mimicking basic functionalities of Bash. This project helps deepen understanding of processes, file descriptors, and system calls in a Unix-like environment. This version successfully implements all mandatory and bonus features.
 
-..................................................
 
 # Features
 
@@ -35,7 +34,6 @@ Minishell is a 42 School project aimed at creating a minimalist shell in C, mimi
   - **Parentheses `()`** for command precedence.
   - **Implements Wildcard Expansion (`*`)** for file matching.
 
-..................................................
 
 # Compilation and Usage
 
@@ -64,7 +62,6 @@ This generates the `minishell` executable.
 ./minishell
 ```
 
-..................................................
 
 # Example Commands
 
@@ -81,7 +78,7 @@ $ ls *.c
 main.c parser.c utils.c
 ```
 
-..................................................
+
 
 # Technical Details
 
@@ -91,14 +88,14 @@ main.c parser.c utils.c
   - **Resource Management**: Ensures no memory leaks or unclosed file descriptors, tested thoroughly with `valgrind`.
   - **Bonus Features**: A doubly linked list is used to manage the command execution pipeline, allowing for correct precedence with `&&`, `||`, and parentheses. Wildcard expansion uses pattern matching in the current directory.
 
-..................................................
+
 
 # Notes
 
   - The project adheres to 42’s `Norminette` coding standards.
   - Known limitations: Does not support multiline commands, backslashes (`\`), or semicolons (`;`) as per the project requirements.
 
-..................................................
+
 
 # Credits
 
